@@ -3,84 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Simples</title>
-<link rel="stylesheet" href="style2.css">
+    <title>Loja Online</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Barra de Navegação -->
     <header>
-        <h1>Meu Site</h1>
-    </header>
-    
-    <nav>
-        <a href="#sobre">Sobre Nós</a>
-        <a href="#servicos">Serviços</a>
-        <a href="#tabela">Tabela</a>
-        <a href="#contato">Contato</a>
-    </nav>
-    
-    <main>
-        <section id="sobre">
-            <h2>Sobre Nós</h2>
-            <p>Somos uma equipe apaixonada por tecnologia e inovação, sempre buscando criar soluções que facilitem a vida das pessoas.</p>
-        </section>
-        
-
-        
-        <section id="servicos">
-            <h2>Nossos Serviços</h2>
-            <div class="servicos">
-                <div class="card"><h3>Desenvolvimento Web</h3><p>Criação de sites modernos e responsivos.</p></div>
-                <div class="card"><h3>Consultoria em TI</h3><p>Orientação para melhores soluções tecnológicas.</p></div>
-                <div class="card"><h3>Manutenção de Sistemas</h3><p>Correção e aprimoramento de sistemas.</p></div>
-                <div class="card"><h3>Aplicações Móveis</h3><p>Criação de apps para diversas plataformas.</p></div>
+        <nav>
+            <div class="logo">
+                <h1>Loja Virtual</h1>
             </div>
-        </section>
-        
+            <ul class="nav-links">
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <!-- Seção de Produtos -->
+    <section class="produtos">
+        <h2>Nossos Produtos</h2>
+        <div class="container">
+            <!-- Produto 1 -->
+            <div class="card">
+                <img src="https://via.placeholder.com/200" alt="Produto 1">
+                <h3>Produto 1</h3>
+                <p>Descrição breve do produto 1.</p>
+                <span>R$ 99,99</span>
+                <button>Adicionar ao Carrinho</button>
+            </div>
+            <!-- Produto 2 -->
+            <div class="card">
+                <img src="https://via.placeholder.com/200" alt="Produto 2">
+                <h3>Produto 2</h3>
+                <p>Descrição breve do produto 2.</p>
+                <span>R$ 129,99</span>
+                <button>Adicionar ao Carrinho</button>
+            </div>
+            <!-- Produto 3 -->
+            <div class="card">
+                <img src="https://via.placeholder.com/200" alt="Produto 3">
+                <h3>Produto 3</h3>
+                <p>Descrição breve do produto 3.</p>
+                <span>R$ 59,99</span>
+                <button>Adicionar ao Carrinho</button>
+            </div>
+            <!-- Produto 4 -->
+            <div class="card">
+                <img src="https://via.placeholder.com/200" alt="Produto 4">
+                <h3>Produto 4</h3>
+                <p>Descrição breve do produto 4.</p>
+                <span>R$ 199,99</span>
+                <button>Adicionar ao Carrinho</button>
+            </div>
+            <!-- Produto 5 -->
+            <div class="card">
+                <img src="https://via.placeholder.com/200" alt="Produto 5">
+                <h3>Produto 5</h3>
+                <p>Descrição breve do produto 5.</p>
+                <span>R$ 149,99</span>
+                <button>Adicionar ao Carrinho</button>
+            </div>
+            <!-- Produto 6 -->
+            <div class="card">
+                <img src="https://via.placeholder.com/200" alt="Produto 6">
+                <h3>Produto 6</h3>
+                <p>Descrição breve do produto 6.</p>
+                <span>R$ 89,99</span>
+                <button>Adicionar ao Carrinho</button>
+            </div>
+            <!-- Produto 7 -->
+            <div class="card">
+                <img src="https://via.placeholder.com/200" alt="Produto 7">
+                <h3>Produto 7</h3>
+                <p>Descrição breve do produto 7.</p>
+                <span>R$ 249,99</span>
+                <button>Adicionar ao Carrinho</button>
+            </div>
+            <!-- Produto 8 -->
+            <div class="card">
+                <img src="https://via.placeholder.com/200" alt="Produto 8">
+                <h3>Produto 8</h3>
+                <p>Descrição breve do produto 8.</p>
+                <span>R$ 179,99</span>
+                <button>Adicionar ao Carrinho</button>
+            </div>
+        </div>
+    </section>
 
-        <section id="tabela">
-            <h2>Tabela de Preços</h2>
-            <table>
-                <tr>
-                    <th>Serviço</th>
-                    <th>Preço</th>
-                </tr>
-                <tr>
-                    <td>Desenvolvimento Web</td>
-                    <td>R$ 2.000,00</td>
-                </tr>
-                <tr>
-                    <td>Consultoria em TI</td>
-                    <td>R$ 150,00/hora</td>
-                </tr>
-                <tr>
-                    <td>Manutenção de Sistemas</td>
-                    <td>R$ 500,00</td>
-                </tr>
-                <tr>
-                    <td>Aplicações Móveis</td>
-                    <td>R$ 3.500,00</td>
-                </tr>
-            </table>
-        </section>
-        
-        <section id="contato">
-            <h2>Contato</h2>
-            <p>Entre em contato conosco preenchendo o formulário abaixo:</p>
-            <form>
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
-                <label for="mensagem">Mensagem:</label>
-                <textarea name="mensagem" id="mensagem" placeholder="Digite sua mensagem" rows="4"></textarea>
-                <button type="submit">Enviar</button>
-            </form>
-        </section>
-    </main>
-    
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Meu Site. Todos os direitos reservados.</p>
+        <p>&copy; 2025 Loja Virtual | Todos os direitos reservados</p>
     </footer>
 </body>
 </html>
